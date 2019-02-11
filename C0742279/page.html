@@ -2,12 +2,23 @@
 <html>
 <head>
     <title></title>
+    <script type="text/javascript">
+        function addNumbers(j) {
+            var sum = 0;
+            while (1 < j) {
+                sum += j;
+                return sum;
+            }
+        }
+    </script>
 </head>
 <body>
     <script>
-        var input1 = prompt("how high should I count up to?");
-        var sum = 0;
-        for (var i = 0; i < input1; i++) {
+        var inputnumber = prompt("please state starting number");
+        document.write(addNumbers(inputnumber));
+
+
+        /*for (var i = 0; i < input1; i++) {
             document.write("<p>Point A: i is " + i);
             document.write("<p>Point A: sum is " + sum);
             sum += i;
@@ -15,7 +26,11 @@
         }
         document.write("<hr><p>Point c: i is " + i);
         document.write("<p>The sum is " +sum);
-        /*while (j <= input1)
+
+        var input1 = prompt("how high should I count up to?");
+        var sum = 0;
+        var j = 0;
+        while (j <= input1)
         {
             document.write("<p>Point A: i is " + i);
             document.write("<p>Point A:sum is " + sum);
